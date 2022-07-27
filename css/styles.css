@@ -240,6 +240,19 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+  background-color: teal;
 }
 .team-status {
   padding-top: 30px;
