@@ -96,6 +96,13 @@ img {
   gap: 30px;
   margin-left: auto;
 }
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+.contacts-icon {
+  margin-right: 10px;
+}
 .nav-contacts {
   color: var(--text-color);
   font-weight: 500;
@@ -114,6 +121,17 @@ img {
 .nav-contacts:hover {
   color: var(--accent-bg-color);
 }
+/* .contacts-icon:hover, .nav-contacts:hover{
+  color: var(--accent-bg-color);
+  fill: var(--accent-bg-color);
+} */
+/* .contacts-icon:hover,
+.contacts-icon:focus {
+  fill: var(--accent-bg-color);
+} */
+/* .nav-contacts:hover .contacts-icon {
+  fill: var(--accent-bg-color);
+} */
 /* герой */
 .hero {
   background-color: #2f303a;
@@ -256,8 +274,6 @@ img {
 }
 .social-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .team-status {
   padding-top: 30px;
@@ -271,6 +287,11 @@ img {
   cursor: pointer;
   border-radius: 50%;
 }
+.social-item:focus {
+  background-color: var(--accent-bg-color);
+  border-radius: 50%;
+}
+
 .social-item:hover .social-icon {
   fill: #ffffff;
 }
