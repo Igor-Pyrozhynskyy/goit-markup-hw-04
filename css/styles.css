@@ -250,15 +250,30 @@ img {
 .social-item {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  display: block;
-  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .team-status {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+.social-icon {
+  fill: #afb1b8;
+}
+.social-item:hover {
+  background-color: var(--accent-bg-color);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.social-item:hover .social-icon {
+  fill: #ffffff;
+}
 /* -------------підвал----------------*/
 .footer {
   background-color: #2f303a;
