@@ -102,6 +102,7 @@ img {
 }
 .contacts-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 .nav-contacts {
   color: var(--text-color);
@@ -113,7 +114,6 @@ img {
   text-decoration: none;
 }
 .nav-link:hover,
-.nav-link:active,
 .nav-link:focus {
   color: var(--accent-bg-color);
 }
@@ -121,17 +121,6 @@ img {
 .nav-contacts:hover {
   color: var(--accent-bg-color);
 }
-/* .contacts-icon:hover, .nav-contacts:hover{
-  color: var(--accent-bg-color);
-  fill: var(--accent-bg-color);
-} */
-/* .contacts-icon:hover,
-.contacts-icon:focus {
-  fill: var(--accent-bg-color);
-} */
-/* .nav-contacts:hover .contacts-icon {
-  fill: var(--accent-bg-color);
-} */
 /* герой */
 .hero {
   background-color: #2f303a;
@@ -189,6 +178,16 @@ img {
 }
 .main-item {
   width: 270px;
+}
+.main-svg-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 .main-title {
   color: var(--first-title-color);
@@ -287,19 +286,61 @@ img {
   cursor: pointer;
   border-radius: 50%;
 }
-.social-item:focus {
-  background-color: var(--accent-bg-color);
-  border-radius: 50%;
-}
-
 .social-item:hover .social-icon {
   fill: #ffffff;
 }
+/* .clients {
+} */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-item:hover {
+  border: 1px solid #2196f3;
+}
+.clients-icon:hover {
+  fill: var(--accent-bg-color);
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+}
+.clients-icon {
+  fill: #afb1b8;
+}
 /* -------------підвал----------------*/
+.container-wrap .container {
+  display: flex;
+  align-items: baseline;
+}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  align-items: baseline;
 }
 .footer-title {
   font-family: "Raleway", sans-serif;
@@ -337,6 +378,45 @@ img {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-bg-color);
+}
+.footer-follow {
+  padding-left: 70px;
+}
+.follow-text {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.follow-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.follow-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.follow-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soc-icon {
+  fill: #ffffff;
+}
+.follow-item:hover {
+  background-color: var(--accent-bg-color);
 }
 /* -------------фільтри-------- */
 .filter-btn {
